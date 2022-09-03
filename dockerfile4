@@ -1,0 +1,10 @@
+FROM  ubuntu
+
+MAINTAINER srinath
+
+RUN apt-get update
+
+
+
+ADD  https://get.jenkins.io/war-stable/2.346.3/jenkins.war /
+VOLUME /data

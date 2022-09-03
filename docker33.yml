@@ -1,0 +1,18 @@
+---
+version: '3.8'
+
+services:
+  mydb:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: srinath
+      POSTGRES_USER: myuser
+      POSTGRES_DB: MYDB
+  myadminer:
+    image: adminer
+    ports:
+      - 8888:8080
+networks:
+  default:
+    external:
+      name: srinath

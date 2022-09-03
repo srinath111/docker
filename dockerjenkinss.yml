@@ -1,0 +1,8 @@
+FROM jenkins/jenkins
+
+
+MAINTAINER srinath
+
+
+USER root
+

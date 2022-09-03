@@ -1,0 +1,15 @@
+---
+version: '3.8'
+services:
+  mydb:
+    image: postgres
+    environment:
+      POSTGRES_DB: srinath
+      POSTGRES_USER: sri
+  myadminer:
+    image: adminer
+    ports:
+      - 8888:8080
+    links:
+      - mydb:postgres
+...

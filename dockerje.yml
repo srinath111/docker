@@ -1,0 +1,6 @@
+FROM ubuntu
+
+MAINTAINER SRINATH
+
+
+ADD https://get.jenkins.io/war-stable/2.346.3/jenkins.war /
